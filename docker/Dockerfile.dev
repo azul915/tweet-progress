@@ -1,0 +1,7 @@
+FROM gradle:6.5.1-jdk11
+
+RUN apt-get update
+
+WORKDIR /usr/src/template
+
+CMD ["/bin/bash"]
