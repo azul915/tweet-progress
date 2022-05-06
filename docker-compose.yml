@@ -5,6 +5,7 @@ services:
       context: .
       dockerfile: ./docker/Dockerfile.dev
     command: ["tail", "-f", "/dev/null"]
+    env_file: .env
     volumes:
       - ./app:/usr/src/template
       - ./build.sh:/usr/src/template/build.sh
